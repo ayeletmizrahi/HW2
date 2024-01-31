@@ -1,0 +1,74 @@
+
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(180, 210, 220);
+
+}
+
+
+header {
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 70px;
+    width: 100%;
+    list-style: none;
+    background-color:  antiquewhite;
+    border-radius: 9px;
+    padding: 5px;
+    opacity: 70%;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.menu li {
+    border-radius: 9px;
+    padding: 5px;
+}
+
+.menu li a {
+    color: rgb(131, 128, 110);
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+
+.myself {
+    display: flex;
+    margin-left: 500px;
+    margin-top: 10px;
+    width: 390px;
+    height: 570px;
+    box-shadow: 5px 8px 15px 0 rgba(58, 101, 116, 0.2);
+    border-radius: 5px;
+}
+
+.picandtext {
+    display: flex;
+    flex-direction: row;
+}
+
+.homepagetext {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 27px;
+    margin-top: 60px;
+    line-height: 20px;
+}
+
+.homepagetext > h4 {
+    color: rgb(50, 65, 84);
+}
+
+.homepagetext > h1 {
+    font-size: 65px;
+}
+    
