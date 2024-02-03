@@ -1,5 +1,6 @@
 
 
+
 .my-skills {
     display: grid;
     padding: 40px;
@@ -105,6 +106,7 @@
 .interest-items {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .interest-item {
