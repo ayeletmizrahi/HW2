@@ -191,7 +191,7 @@ footer > h2 {
         top: 0;
         width: 100px;
         border-radius: 10px;        
-        background-color: rgba(250, 235, 215, 0.595);
+        background-color: rgba(250, 235, 215, 0.777);
         backdrop-filter: blur(10px);
         display: none;
         gap: 5px;
