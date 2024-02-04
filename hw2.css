@@ -191,10 +191,10 @@ footer > h2 {
         top: 0;
         width: 100px;
         border-radius: 10px;        
-        background-color: rgba(250, 235, 215, 0.348);
+        background-color: rgba(250, 235, 215, 0.595);
         backdrop-filter: blur(10px);
         display: none;
-        gap: 0px;
+        gap: 5px;
         list-style: none;
         flex-direction:column;
         padding-left: 10px;
@@ -239,13 +239,14 @@ footer > h2 {
 
    .myself {
         margin-left: -580px;
+        margin-top: 80px;
         width: 60%;
         height: 20%;
     }
 
 
    .home-contetnt {
-        margin-top: 300px;
+        margin-top: 370px;
    }
 
    .homepagetext h3 {
