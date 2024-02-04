@@ -1,6 +1,5 @@
 
 
-
 .about-text {
     margin-left: 50px;
 }
@@ -14,22 +13,6 @@
     align-items: center;
     justify-content: space-around;
 }
-
-
-
-@media (max-width: 700px) {
-    .about-content {
-        display: flex;
-        flex-direction: column;
-        margin-top: 200px;
-    }
-
-    .about-content img {
-        width: 80%;
-        height: 70%;
-    }
-}
-
 
 
 h1 {
@@ -82,4 +65,30 @@ span a:hover {
     filter:sepia(25%);
     border-style: ridge;
     border-color: beige;
+}
+
+
+@media (max-width: 700px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .about-text {
+        margin: 10px;
+        width: 80%;
+    }
+
+
+    .about-content img {
+        width: 60%;
+        height: 30%;
+        margin-top: 80px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
 }

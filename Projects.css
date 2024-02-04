@@ -23,11 +23,10 @@ h1 {
 
 .projects {
     display: flex;
+    gap: 100px;
     justify-content: center;
     align-items: center;
-    gap: 60px;
-    width: 100%;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 
@@ -35,4 +34,57 @@ img {
     border-style: ridge;
     border-color: beige;
     border-radius: 20px;
+    width: 300px;
+    height: 400px;
+    filter: grayscale(60%);
 }
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0);
+    background: rgba(151, 127, 87, 0.5); /* Black see-through */
+    color: #f1f1f1; 
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 3px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .container {
+    position: relative;
+
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+
+
+  
+@media (max-width: 700px)
+{
+    .projects {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+    img {
+        width: 200px;
+        height: 300px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+}
+

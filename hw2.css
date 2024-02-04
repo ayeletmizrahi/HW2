@@ -1,7 +1,7 @@
 
 html {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(176, 157, 139);
+    background-color: #b09d8b;
     scroll-behavior: smooth;
 }
 
@@ -17,6 +17,16 @@ nav {
     margin-left: 20px;
     margin-top: 10px;
 }
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    margin-left: 1280px;
+    height: 110px;
+    width: 150px;
+}
+
 
 
 .nav-content {
@@ -36,6 +46,7 @@ nav {
     gap: 70px;
     list-style: none;
     transition: left 0.3s;
+    padding-left: 20px;
 }
 
 .nav-content ul li a {
@@ -75,7 +86,7 @@ nav {
 .myself {
     display: flex;
     flex-direction: row;
-    margin-left: 270px;
+    margin-left: 160px;
     width: 450px;
     height: 600px;
     border-radius: 100%;
@@ -117,11 +128,12 @@ nav {
 .homepagetext > h4 {
     color: rgb(66, 51, 16);
     font-size: 20px;
-    line-height: 30px;
+    line-height: 40px;
     margin-top: 0px;
 }
 
 .homepagetext > h1 {
+    margin-top: 10px;
     font-size: 65px;
     line-height: 80px;
 }
@@ -166,6 +178,11 @@ footer > h2 {
     color: rgb(67, 52, 34);
 }
 
+.menu_button {
+    display: none;
+}
+
+
 
 @media (max-width: 700px) {
 
@@ -177,13 +194,17 @@ footer > h2 {
         background-color: rgba(250, 235, 215, 0.348);
         backdrop-filter: blur(10px);
         display: none;
-        gap: 5px;
+        gap: 0px;
         list-style: none;
         flex-direction:column;
         padding-left: 10px;
         justify-content: flex-start;
+        padding-top: 10px;
     }
     
+    .menu_button {
+        display: block;
+    }
 
     .side-bar a {
         color: rgb(131, 128, 110);
@@ -195,13 +216,13 @@ footer > h2 {
         margin-bottom: 10px;
     }
 
-    .side-bar li a:hover {
-        background-color: rgb(131, 128, 110);
-    }
+
 
     .nav-content {
+        margin-top: 7px;
         padding-right: 10px;
         padding-left: 10px;
+        margin-bottom: 50px;
     }
 
     .nav-content ul {

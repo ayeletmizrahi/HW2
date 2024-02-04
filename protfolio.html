@@ -11,9 +11,10 @@
 <body>
     <header>
         <nav>
+            <img class="logo" src="./pictures/logo.png" alt="Logo">
             <div class="nav-content">
                 <ul class="nav-bar">
-                    <li class onclick=showMenu()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                    <li class="menu_button" onclick=showMenu()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                     <div class="hide_element">
                     <li class= "current"><a href="./protfolio.html"> Home </a> </li>
                     <li> <a href="./About.html"> About Me </a></li> 
@@ -31,18 +32,6 @@
                 <li> <a href="./Projects.html"> Projects </a></li>
             </ul>
         </nav>
-
-        <script>
-            function showMenu() {
-                const sidebar= document.querySelector('.side-bar')
-                sidebar.style.display = 'flex'
-            }
-            function hideMenu() {
-                const sidebar= document.querySelector('.side-bar')
-                sidebar.style.display = 'none'
-            }
-
-        </script>
     </header>
  
     <div class="picandtext">
@@ -70,6 +59,16 @@
         class="myself"
         >
     </div>
-
+    
+    <script>
+        function showMenu() {
+            const sidebar= document.querySelector('.side-bar')
+            sidebar.style.display = 'flex'
+        }
+        function hideMenu() {
+            const sidebar= document.querySelector('.side-bar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
