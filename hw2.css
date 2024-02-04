@@ -26,6 +26,7 @@ nav {
     border-radius: 9px;
     opacity: 85%;
     font-size: 25px;
+    padding-right: 20px;
 }
 
 
@@ -41,7 +42,6 @@ nav {
     color: rgb(131, 128, 110);
     font-weight: bold;
     text-decoration-line: none;
-    padding-right: 20px;
 }
 
 .nav-content ul li a:hover {
@@ -49,57 +49,27 @@ nav {
     color: rgb(97, 72, 41);
 }
 
-@media (max-width: 700px) {
 
-    .nav-content {
-        height: 250px;
-    }
-
-    .nav-content ul {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-        align-items: start;
-        padding: 10px;
-        margin: 5px;
-    }
-
-    .nav-content li a {
-        display: flex;
-        font-size: 80%;
-    }
-
-   .home-contetnt {
-        position: fixed;
-        margin-top: 500px;
-   }
-
-
-   .homepagetext {
-        padding-left: 25px;
-   }
-
-
-   .homepagetext h3 {
-        font-size: 20px;
-   }
-
-   .homepagetext h1 {
-        margin: 0px;
-        line-height: 60px;
-   }
-
-
-    .home-contetnt h4 {
-        padding-top: 5px;
-        font-size: 10px;
-    }
-
-    footer {
-        margin-left: 50px;
-    }
+.nav-content .current {
+    border-style: dotted;
+    border-color:rgb(131, 128, 110);
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 2px;
 }
+
+.side-bar {
+    display: none;
+}
+
+.nav-content .hide_element {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    list-style: none;
+    transition: left 0.3s;
+}
+
 
 
 .myself {
@@ -141,17 +111,19 @@ nav {
     margin-left: 50px;
     font-size: 27px;
     margin-top: 60px;
-    line-height: 20px;
+    line-height: 8px;
 }
 
 .homepagetext > h4 {
     color: rgb(66, 51, 16);
     font-size: 20px;
     line-height: 30px;
+    margin-top: 0px;
 }
 
 .homepagetext > h1 {
     font-size: 65px;
+    line-height: 80px;
 }
 
 .slide-right {
@@ -169,7 +141,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 30px;
 }
     
 footer > h2 {
@@ -195,3 +167,84 @@ footer > h2 {
 }
 
 
+@media (max-width: 700px) {
+
+    .side-bar {
+        position: fixed;
+        top: 0;
+        width: 100px;
+        border-radius: 10px;        
+        background-color: rgba(250, 235, 215, 0.348);
+        backdrop-filter: blur(10px);
+        display: none;
+        gap: 5px;
+        list-style: none;
+        flex-direction:column;
+        padding-left: 10px;
+        justify-content: flex-start;
+    }
+    
+
+    .side-bar a {
+        color: rgb(131, 128, 110);
+        font-weight: bold;
+        text-decoration-line: none;
+    }
+
+    .side-bar li {
+        margin-bottom: 10px;
+    }
+
+    .side-bar li a:hover {
+        background-color: rgb(131, 128, 110);
+    }
+
+    .nav-content {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .nav-content ul {
+        display: flex;
+        justify-content: center;
+        padding: 2px;
+    }
+   
+
+    .nav-content .hide_element {
+        display: none;
+    }
+
+
+   .myself {
+        margin-left: -580px;
+        width: 60%;
+        height: 20%;
+    }
+
+
+   .home-contetnt {
+        margin-top: 300px;
+   }
+
+   .homepagetext h3 {
+        font-size: 20px;
+   }
+
+   .homepagetext h1 {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 70px;
+        width: 50%;
+   }
+
+
+    .home-contetnt h4 {
+        width: 50%;
+    }
+
+    footer {
+        line-height: 8px;
+        margin-left: 10px;
+    }
+}
