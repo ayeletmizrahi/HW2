@@ -196,15 +196,18 @@ footer > h2 {
         display: none;
         gap: 5px;
         list-style: none;
+        z-index: 999;
         flex-direction:column;
         padding-left: 10px;
         justify-content: flex-start;
         padding-top: 10px;
+        box-shadow: 8px 8px 20px rgb(131, 128, 110);
     }
-    
+
     .menu_button {
         display: block;
-    }
+    } 
+    
 
     .side-bar a {
         color: rgb(131, 128, 110);
