@@ -1,70 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gal's Protfolio</title>
-    <link rel="stylesheet" href="./hw2.css">
-    <link rel="stylesheet" href="./Projects.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-</head>
+    <link rel="stylesheet" href="./hw2.css" />
+    <link rel="stylesheet" href="./Projects.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
 
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-content">
-                <ul class="nav-bar">
-                    <li class="menu_button" onclick=showMenu()> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-                    <div class="hide_element">
-                    <li><a href="./protfolio.html"> Home </a> </li>
-                    <li> <a href="./About.html"> About Me </a></li> 
-                    <li> <a href="./Skills.html"> Skills </a></li>
-                    <li class= "current"> <a href="./Projects.html"> Projects </a></li>
-                    </div>
-                </ul>
+      <nav>
+        <div class="nav-content">
+          <ul class="nav-bar">
+            <li class="menu_button" onclick="showMenu()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="26"
+                  viewBox="0 -960 960 960"
+                  width="26"
+                >
+                  <path
+                    d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                  /></svg
+              ></a>
+            </li>
+            <div class="hide_element">
+              <li><a href="./HomeAssignment2.html"> Home </a></li>
+              <li><a href="./About.html"> About Me </a></li>
+              <li><a href="./Skills.html"> Skills </a></li>
+              <li class="current"><a href="./Projects.html"> Projects </a></li>
             </div>
-            <ul class="side-bar">
-                <li onclick=hideMenu()> <a href="#"> <svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-                </a></li>
-                <li class= "current"><a href="./protfolio.html"> Home </a> </li>
-                <li> <a href="./About.html"> About Me </a></li> 
-                <li> <a href="./Skills.html"> Skills </a></li>
-                <li> <a href="./Projects.html"> Projects </a></li>
-            </ul>
-        </nav>
+          </ul>
+        </div>
+        <ul class="side-bar">
+          <li onclick="hideMenu()">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="26"
+                viewBox="0 -960 960 960"
+                width="26"
+              >
+                <path
+                  d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="current"><a href="./HomeAssignment2.html"> Home </a></li>
+          <li><a href="./About.html"> About Me </a></li>
+          <li><a href="./Skills.html"> Skills </a></li>
+          <li><a href="./Projects.html"> Projects </a></li>
+        </ul>
+      </nav>
     </header>
 
-    <h1 class="fade"> My Projects: </h1>
+    <h1 class="fade">My Projects:</h1>
     <section class="projects">
-        <div class="container">
+      <div class="container">
         <a href="numrology_map.pdf" target="_blank">
-            <img src="./pictures/mesulash.jpeg" alt="numerology-map">
-            <div class="overlay"> Click to read more</div>
+          <img src="./pictures/mesulash.jpeg" alt="numerology-map" />
+          <div class="overlay">Click to read more</div>
         </a>
-        </div>
-        <div class="container">
-        <a href="https://www.instagram.com/p/CuhgVJ2t2al/?igsh=bDNkbTZkM3R4ZTY2" target="_blank">
-            <img src="./pictures/thanks.jpg" alt="instagramPost">
-            <div class="overlay"> Click to read more</div>
+      </div>
+      <div class="container">
+        <a
+          href="https://www.instagram.com/p/CuhgVJ2t2al/?igsh=bDNkbTZkM3R4ZTY2"
+          target="_blank"
+        >
+          <img src="./pictures/thanks.jpg" alt="instagramPost" />
+          <div class="overlay">Click to read more</div>
         </a>
-        </div>
-        <div class="container">
+      </div>
+      <div class="container">
         <a href="./סדנת נומרולוגיה (3).pdf" target="_blank">
-            <img src="./pictures/couplemap.png" alt="numerology-couple">
-            <div class="overlay"> Click to read more</div>
+          <img src="./pictures/couplemap.png" alt="numerology-couple" />
+          <div class="overlay">Click to read more</div>
         </a>
-        </div>
+      </div>
     </section>
-    
+
     <script>
-        function showMenu() {
-            const sidebar= document.querySelector('.side-bar')
-            sidebar.style.display = 'flex'
-        }
-        function hideMenu() {
-            const sidebar= document.querySelector('.side-bar')
-            sidebar.style.display = 'none'
-        }
+      function showMenu() {
+        const sidebar = document.querySelector(".side-bar");
+        sidebar.style.display = "flex";
+      }
+      function hideMenu() {
+        const sidebar = document.querySelector(".side-bar");
+        sidebar.style.display = "none";
+      }
     </script>
-</body>
+  </body>
 </html>
